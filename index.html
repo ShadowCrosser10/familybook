@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>My Family Book!</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+</head>
+<body>
+<h1>My Family Book!</h1>
+<br>
+<hr>
+<br>
+<img src="https://images-na.ssl-images-amazon.com/images/I/51PJAmPk+9L._SX351_BO1,204,203,200_.jpg" id="familyPictures">
+<br>
+<p id="familyNames">My Family!</p>
+<br>
+<button onClick="goNext()">Next =></button>
+</body>
+</html>
+
+<script>
+var images = [
+"https://images-na.ssl-images-amazon.com/images/I/51PJAmPk+9L._SX351_BO1,204,203,200_.jpg",
+"https://thumbs.dreamstime.com/b/father-portrait-handsome-man-shirt-jeans-sweater-wearing-glasses-cartoon-character-standing-dad-vector-illustration-86364395.jpg",
+"https://cdn.dribbble.com/users/209440/screenshots/4478471/media/1b209e076a533039952c2ab2532aef46.png?compress=1&resize=800x600",
+"https://image.shutterstock.com/image-vector/cartoon-older-brother-his-younger-260nw-1309568989.jpg",
+"https://lh3.googleusercontent.com/hangouts/AMSf6AFSu93dtKwbuaqN4E8FnU1bxKU01ODEE44zxC8CAFhP0lCCYxvprp4m1j4U2pOqHzHi9tSAst3-XAtPsdHoMLsO22q4eH3nhCkpIukbx_Aopv5pc7NjWYpyG2oh6tJ1d3maTv-s1mAw4yOeWjN7i1d7RjoA58pcorAeuRHFke5svceyP43Ip7lWcxvltuDo8ddwDc1mEhiK2Sc_IFPKu0JXELWhqRsV_7ewlDUl5CLrVTA4nccta8aZQ3berBGAtHZvKcskpNVZs7BMFUmu-6O4C4N8CjGc132IPPcJU29xzDvJEQnr_ML06Cy8NuRRk7qFCwEVgsayXD_X4uTm_RW9IP0sRoduELuhjgMVRmM-ief8dwsv9mNnpU_0qkndRA-rH-ksU2DphBpdYhImGizN-oKHf47Zdu2GYjxVCeimmd6GkIfTMYLno0UZ-v8XgpbcCK4Gf38x4aBtdBCntYEB6Q5oORRERTCOW3FNKxDWux7BB0q2eNoVzM5MsHOLokhItIBhwQt4hTNSTLBuWM93DAD8qdtyTLVhVTuWg6mMwLBXUzis8IasZ8-n8MiBkUCJVf7D_e9YDGa0ZKuy3A1YMoHLD8Wc0tahyrpFs1sTLBogBouQ0wykbXVvAn0r2sItrNQEPM25M_W6lfV1v4RLrHFjrH0EEv9NTn-z6-_nvMo0DpmZUKCTZkqkYyfVKqXbalT21XR7YeCypWlsrNVY4NB12Nq6sNqgiPW855ly5V5Vvsw8hAhdLnjNGpBBiQPVvD7d60ZLtbcYxey6OOSDlZ3I97O4EjRADyaQ-edbWHUzcJQU9E2NHf60aL5871xFGfSugjQqFNaNXVEg7TBfsDmhNg86lCpiDS5hsiyAl5PepoQaHRsE3RvAo3suRLFP0QxJMPfhq6lYevtL2mAXHx2ymYMtFS_DtgXFUkkQ_2F8Cgic7fO-4xtinNJywL-T=w1134-h1512?authuser=0",
+];
+
+var text = [
+"My Family",
+"My dad",
+"My mom",
+"My brother",
+"Me!",
+];
+var i=0;
+function goNext() {
+
+document.getElementById("familyPictures").src=images[i];
+
+document.getElementById("familyNames").innerHTML = text[i];
+
+i++;
+
+}
+</script>
+
+<style>
+body {
+font-family: 'Cinzel', serif;
+text-align:center;
+}
+img {
+height:500px;
+width:auto;
+}
+</style>
